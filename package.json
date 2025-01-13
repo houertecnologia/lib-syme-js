@@ -1,0 +1,15 @@
+{
+  "name": "lib-syme-js",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "JavaScript Library to make requests to Syme",
+  "main": "index.js",
+  "repository": "https://github.com/houertecnologia/lib-syme-js",
+  "author": "Jaime Daniel Corrêa Mendes <jaimedaniel@tartech.com.br>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.7.9",
+    "uuid": "^11.0.5"
+  }
+}
