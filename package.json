@@ -1,7 +1,7 @@
 {
   "name": "lib-syme-js",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "JavaScript Library to make requests to Syme",
   "main": "index.js",
   "repository": "https://github.com/houertecnologia/lib-syme-js",
