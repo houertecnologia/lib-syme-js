@@ -190,7 +190,7 @@ class Syme {
 	/**
 	 * 
 	 */
-	async send (message, routingkey, contenttype, publishedby, level, severity, payload) {
+	async send (message, speak, routingkey, contenttype, publishedby, level, severity, payload) {
 
 		if ((!message) || (message === "")) {
 
@@ -198,7 +198,7 @@ class Syme {
 
 		}
 
-		const input = new SymeMessage(null, message, false, this.broker, publishedby, this.application, level, severity, payload, routingkey, contenttype);
+		const input = new SymeMessage(null, message, speak, this.broker, publishedby, this.application, level, severity, payload, routingkey, contenttype);
 
 		try {
 
@@ -223,7 +223,7 @@ class Syme {
 
 		}
 
-		const input = new SymeMessage(null, message, false, this.broker, publishedby, this.application, "error", "Minor", payload, routingkey, contenttype);
+		const input = new SymeMessage(null, message, true, this.broker, publishedby, this.application, "error", "Minor", payload, routingkey, contenttype);
 
 		try {
 
